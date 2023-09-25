@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 실습예제</title>
+</head>
+<body>
+  <!-- 
+    모든 input 입력란은 필수 입력 항목
+  -->
+  <h1>롯데 자이언츠몰 회원 가입을 환영합니다.</h1>
+  <form action="">
+  <fieldset>
+    <legend>사용자 정보</legend>
+    <ul>
+      <li>
+        <label for="id">아이디</label>
+        <input type="text" placeholder="4자 ~ 10자 사이, 공백없이" autofocus size="21" id="id" required/>
+      </li>
+      <li>
+        <label for="email">이메일</label>
+        <input type="email" id="email" size="21" required autofocus/>
+      </li>
+      <li>
+        <label for="password">비밀번호</label>
+        <input type="password" placeholder="문자와 숫자, 특수 기호 포함" size="21" required autofocus/>
+      </li>
+      <li>
+        <label for="scpassword">비밀번호 확인</label>
+        <input type="scpassword"  required autofocus/>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>이벤트와 새로운 소식</legend>
+    <input type="radio" name="event" id="yes"/>
+    <label for="yes">메일 수신</label>
+    <input type="radio" name="noevent" id="no" checked />
+    <label for="noevent">메일 수신 안함</label>
+  </fieldset>
+  <div>
+    <label for="join">
+      <input type="submit" value="가입하기">
+    </label>
+    <label for="cancel">
+      <input type="reset" value="취소">
+    </label>  
+  </div>
+  </form>
+  
+</body>
+</html>
