@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML 복습</title>
+  <link rel="stylesheet" href="./html_practice.css">
 </head>
 <body>
   <!-- 
@@ -11,5 +12,50 @@
   form, fieldset, legend, label, input(placeholder, required 속성)
   textarea 등 활용
   -->
+  <header></header>
+  <h1>About Me</h1>
+  <img src="./img/OxPK1Lbvdn7AwrpQSpjlOP63XiFaOYny2L7iJiNjiZrtgxNy2vZX5FLZdXGKuULcz7U6YOjqaal6LM_iHNFXBOVlcwprh0N3bC05561187nXzMtZhOMQIWGcT-5-vMfrY6rch53ca8BolskNm63rkQ.svg" alt="롯데자이언츠" width="200px
+  ">
+  <main>
+    <section>
+      <h2>John Doe</h2>
+      <p>Email: <a href="">john.doe@example.com</a></p>
+    </section>
+    <section>
+      <h2>Education & Work Experience</h2>
+      <ul>
+        <li>Msc in computer Science, XYZ Universtiy, 2018-2020</li>
+        <li>Software Developer, ABC corp, 2020-present</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Certifications & Awards</h2>
+      <ol>
+        <li type="A">Certified Python Developer, 2019</li>
+        <li type="A">Best employee of the Year, ABC Corp, 2021</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Contact Form</h2>
+      <form action="">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name">name:</label>
+          <br/>
+          <input type="text" id="name" autofocus placeholder="Enter your name">
+          <br/>
+          <label for="useremail">Email:</label>
+          <br/>
+          <input type="email" id="useremail" autofocus placeholder="Enter your email">
+          <br/>
+          <label for="text">Message:</label>
+          <br/>
+          <textarea placeholder="Enter your message" cols="30" rows="10"></textarea>
+          <br/>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
