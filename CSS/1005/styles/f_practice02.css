@@ -1,0 +1,23 @@
+p {
+  color: blue;
+}
+
+#important {
+  color: red;
+}
+
+h2 {
+  font-style: italic;
+}
+
+p.notice {
+  color: violet;
+}
+
+li {
+  color: green;
+}
+
+.notice {
+  font-weight: bold;
+}
