@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML & CSS 복습</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!--  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS 복습</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  
     !헤더
 
     웹사이트의 헤더에 "Welcome to My Website"라는 제목을 가운데 정렬로 표시하세요.
@@ -34,5 +34,108 @@
     사용자가 폼을 다시 방문할 때 이전에 입력했던 데이터를 자동으로 채울 수 있도록 설정하세요.
     모든 입력 필드는 "Personal Information"이라는 제목을 가진 필드셋 내에 있어야 합니다.
   -->
-</body>
+    <div class="header">
+      <header>
+        <h1>Welcome to My Website</h1>
+      </header>
+    </div>
+
+    <div class="nav">
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li>
+            <a href="#"> Section 1 </a>
+          </li>
+          <li>
+            <a href="#"> Section 2 </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <main class="content">
+        <section id="section1">
+          <h2>Section1</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">
+            <img
+              src="./img/Profile Pictures_02.png"
+              alt="arona"
+              class="arona1"
+            />
+          </a>
+        </section>
+
+        <section id="section2">
+          <h2>
+            Section2
+          </h2>
+            <img src="./image.png" alt="Example image" class="arona2" />
+        </section>
+      </main>
+    </di>
+
+    <div class="PI">
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="uid">
+            <label for="username"> Name: </label>
+            <br />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              required
+              autofocus
+            />
+          </div>
+
+          <div class="upw">
+            <label for="userpw"> Password: </label>
+            <br />
+            <input type="password" id="userpw" name="userpw" required />
+          </div>
+
+          <div class="umail">
+            <label for="useremail"> Email: </label>
+            <br />
+            <input type="email" id="useremail" name="useremail" required />
+          </div>
+
+          <div class="form-vote">
+            <label for="vote"> Do you like this form? </label>
+            <br />
+            <input type="radio" value="yes" name="like" />yes
+            <input type="radio" value="no" name="dislike" />no
+          </div>
+
+          <div class="Comment">
+            <label for="Comments"> Comments </label>
+            <br />
+            <textarea name="Comments" id="Comments" cols="30" rows="10">
+            </textarea>
+          </div>
+
+          <div class="sumit">
+            <input type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>

@@ -36,16 +36,16 @@ article {
 }
 
 #pitcher {
-  order: 3;
+  order: ;
   flex: 1;
 }
 
 #catcher {
-  order: 1;
+  order: ;
   flex: 2 150px;
 }
 
 #fielder {
-  order: 2;
+  order: ;
   flex: 1;
 }
