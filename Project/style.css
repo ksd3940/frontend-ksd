@@ -1,0 +1,310 @@
+/* 페이지 전체설정 */
+* {
+  text-decoration: none;
+  color: black;
+  white-space: wrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 0 auto;
+}
+/* 상단 로그인 영역*/
+.login-options {
+  display: flex;
+  justify-content: center;
+  background-color: #444444;
+  width: 100%;
+  max-width: 100%;
+  gap: 10px;
+}
+.login-options > div {
+  display: flex;
+  margin: 10px;
+}
+.login-options > div > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* 로고 네비게이션 영역 */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: green;
+}
+.nav > div {
+  display: flex;
+  justify-content: center;
+}
+.nav > div > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+/* 메인 베너 영역 */
+.banner {
+  display: flex;
+}
+.banner > img {
+  width: 100%;
+}
+/* 메인 베너 밑 검색 영역 */
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: #249b9f;
+  padding: 20px;
+}
+.search > div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.search > div > label,
+input {
+  display: flex;
+  align-content: center;
+}
+/* 메인 영역 */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: gray;
+}
+.main-head {
+  background-color: rgb(27, 172, 172);
+  text-align: center;
+}
+
+.service1 {
+  display: flex;
+  justify-content: center;
+}
+.service1 > .find-doctor,
+.find-medical-department,
+.Medical-Appointment,
+.Reservation-Consultation,
+.Chart {
+  padding: 30px;
+  border: 1px solid black;
+  background-color: aquamarine;
+}
+
+.service2 {
+  display: flex;
+  justify-content: center;
+}
+
+.service2 > .Document,
+.Medical-record,
+.Consent-form {
+  padding: 30px;
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+/* 예약 및 문의 영역 */
+.info {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+.left-box {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.left-box-in-top,
+.left-box-in-bottom {
+  margin: 10px;
+}
+
+.left-box-in-top {
+  background-color: aqua;
+  flex: 1;
+}
+.left-box-in-bottom {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+}
+.left-box-in-bottom-left .left-box-in-bottom-right {
+  flex: 1;
+}
+.left-box-in-bottom-left {
+  background-color: green;
+}
+.left-box-in-bottom-right {
+  background-color: greenyellow;
+}
+.right-box {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.right-box-in-top,
+.right-box-in-bottom {
+  margin: 10px;
+}
+.right-box-in-top {
+  background-color: aqua;
+  flex: 1;
+}
+.right-box-in-bottom {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+}
+.right-box-in-bottom-left .right-box-in-bottom-right {
+  flex: 1;
+}
+.right-box-in-bottom-left {
+  background-color: green;
+}
+.right-box-in-bottom-right {
+  background-color: greenyellow;
+}
+/* 건강 정보 영역 */
+.health-info {
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.health-info-head {
+  text-align: center;
+}
+.health-info-main {
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+}
+.health-info-left-box {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.health-info-left-box-in-top > div > h2 {
+  text-align: center;
+}
+.health-info-left-box-in-top,
+.health-info-left-box-in-bottom {
+  margin: 10px;
+}
+.health-info-left-box-in-top {
+  background-color: aqua;
+  flex: 1;
+}
+.health-info-left-box-in-bottom {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  gap: 20px;
+}
+.health-info-left-box-in-bottom-left,
+.health-info-left-box-in-bottom-right {
+  flex: 1;
+}
+.health-info-left-box-in-bottom-left {
+  background-color: green;
+}
+.health-info-left-box-in-bottom-right {
+  background-color: greenyellow;
+}
+.health-info-right-box {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.health-info-right-box-in-top,
+.health-info-right-box-in-bottom {
+  margin: 10px;
+}
+.health-info-right-box-in-top {
+  background-color: aqua;
+  flex: 1;
+}
+.health-info-right-box-in-bottom {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  gap: 20px;
+}
+.health-info-right-box-in-bottom-left,
+.health-info-right-box-in-bottom-right {
+  flex: 1;
+}
+.health-info-right-box-in-bottom-left {
+  background-color: green;
+}
+.health-info-right-box-in-bottom-right {
+  background-color: greenyellow;
+}
+/* 소식 / 뉴스 영역 */
+.notice_news {
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+}
+.notice-news-main {
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+.notice-left-box, .news-right-box {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.l_sell_background, .r_sell_background {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: chocolate;
+}
+.l_sell_div, .r_sell_div > tr,td {
+  border: 2px solid black;
+}
+.notice-left-box-bottom, .news-right-box-bottom {
+  background-color: aquamarine;
+  display: flex;
+}
+/* sns 영역 */
+.sns {
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.sns_main_head, .sns_main_icons {
+  margin: 10px 0;
+}
+.sns >h1 {
+  background-color: aqua;
+  text-align: center;
+  
+}
+.sns_main_icons {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/* 기타 안내 영역 */
+
+/* 저작권 영역 */

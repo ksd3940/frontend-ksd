@@ -1,17 +1,461 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>평일 웹 프론트엔드</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-<header>
-
-</header>
-<main>
-
-</main>
+  <!-- 상단 로그인  -->
+  <div class="login-options">
+    <div>
+      <a href="">로그인</a>
+    </div>
+    <div>
+      <a href="">회원가입</a>
+    </div>
+    <div>
+      <a href="">나의차트</a>
+    </div>
+    <div>
+      <a href="">병원둘러보기</a>
+    </div>
+    <div>
+      <a href="">오시는길</a>
+    </div>
+    <div>
+      <select name="lang">
+        <option value="">Language</option>
+        <option value="">English</option>
+        <option value="">Chinese</option>
+        <option value="">Russian Arabic</option>
+        <option value="">Mongolian</option>
+        <option value="">Japanese</option>
+      </select>
+    </div>
+    <div>
+      <img src="" alt="돋보기" />
+    </div>
+  </div>
+  <!--  로고 네비게이션 영역 -->
+  <div class="nav">
+    <div>
+      <a href="">
+        <img src="" alt="아산병원로고" />
+      </a>
+    </div>
+    <div>
+      <a href="">의료진/진료과</a>
+    </div>
+    <div>
+      <a href="">진료예약/안내</a>
+    </div>
+    <div>
+      <a href="">건강정보</a>
+    </div>
+    <div>
+      <a href="">고객서비스</a>
+    </div>
+    <div>
+      <a href="">의학교육</a>
+    </div>
+    <div>
+      <a href="">병원이야기</a>
+    </div>
+    <div>
+      <a href="">병원소개</a>
+    </div>
+  </div>
+  <!-- 메인 베너 영역 -->
+  <div class="banner">
+    <img src="./images/main.jpg" alt="배너" />
+  </div>
+  <!-- 메인 베너 밑 검색 영역 -->
+  <div class="search">
+    <div>
+      <div>
+        <label for="">통합검색</label>
+      </div>
+      <div>
+        <input type="search" placeholder="검색어를 입력해주세요." />
+      </div>
+      <div>
+        <img src="" alt="돋보기1" />
+      </div>
+    </div>
+  </div>
+  <!--  메인 영역 -->
+  <div class="main">
+    <div class="main-head">
+      <h1>주요 서비스</h1>
+    </div>
+    <div class="service1">
+      <div class="find-doctor">
+        <a href="">의료진찾기</a>
+      </div>
+      <div class="find-medical-department">
+        <a href="">진료과 찾기</a>
+      </div>
+      <div class="Medical-Appointment">
+        <a href="">진료예약</a>
+      </div>
+      <div class="Reservation-Consultation">
+        <a href="">첫방문 고객 예약 상담</a>
+      </div>
+      <div class="Chart">
+        <a href="">나의차트</a>
+      </div>
+    </div>
+    <div class="service2">
+      <div class="Document">
+        <a href="">증명서(진단서, 소견서등)출력</a>
+      </div>
+      <div class="Medical-record">
+        <a href="">의무기록 및 영상CD발급</a>
+      </div>
+      <div class="Consent-form">
+        <a href="">동의서,위임장 양식 다운로드</a>
+      </div>
+    </div>
+  </div>
+  <!--  예약 및 문의 영역 -->
+  <div class="info">
+    <div class="left-box">
+      <div class="left-box-in-top">
+        <div class="tbox1">
+          전화예약 및 문의
+        </div>
+        <div class="tbox2">
+          1688-7575
+        </div>
+        <div class="tbox3">
+          <img src="" alt="전화기" />
+        </div>
+      </div>
+      <div class="left-box-in-bottom">
+        <div class="left-box-in-bottom-left">
+          <div class="cancer">
+            암병원
+          </div>
+          <div class="first">
+            <a href="">첫방문 고객 상담:02-3010-1300</a>
+          </div>
+        </div>
+        <div class="left-box-in-bottom-right">
+          <div>
+            어린이병원
+          </div>
+          <div>
+            <a href="">첫방문 고객 상담:02-3010-1230</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="right-box-in-top">
+        <div>
+          <a href="">건강증진센터</a>
+          <span>상담 및 예약 02-3010-5000</span>
+        </div>
+        <div>
+          <a href="">개인 프로그램</a>
+        </div>
+        <div>
+          <a href="">법인 프로그램</a>
+        </div>
+        <div>
+          <a href="">건강검진 예약 신청</a>
+        </div>
+      </div>
+      <div class="right-box-in-bottom">
+        <div class="right-box-in-bottom-left">
+          <div>
+            <a href="">의사직/일반직 채용</a>
+          </div>
+        </div>
+        <div class="right-box-in-bottom-right">
+          <div>
+            <a href="">빈소현황/사이버 조문</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 건강 정보 영역 -->
+  <div class="health-info">
+    <h1 class="health-info-head">건강 이야기</h1>
+    <div class="health-info-main">
+      <div class="health-info-left-box">
+        <div class="health-info-left-box-in-top">
+          <div>
+            <h2>건강TV</h2>
+          </div>
+          <div>
+            <img src="" alt="썸네일">
+          </div>
+        </div>
+        <div class="health-info-left-box-in-bottom">
+          <div class="health-info-left-box-in-bottom-left">
+            <a href="">질환백과</a>
+          </div>
+          <div class="health-info-left-box-in-bottom-right">
+            <a href="">증상백과</a>
+          </div>
+        </div>
+      </div>
+      <div class="health-info-right-box">
+        <div class="health-info-right-box-in-top">
+          <div>
+            <h2>건강정보</h2>
+          </div>
+          <div>
+            <img src="" alt="썸네일">
+          </div>
+        </div>
+        <div class="health-info-right-box-in-bottom">
+          <div class="health-info-right-box-in-bottom-left">
+            <a href="">검사/시술/수술정보</a>
+          </div>
+          <div class="health-info-right-box-in-bottom-right">
+            <a href="">의약품 정보</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 소식 / 뉴스 영역 -->
+  <div class="notice_news">
+    <div class="notice-news-main">
+      <div class="notice-left-box">
+        <a href="" class="notice-left-box-top">소식/공지</a>
+        <div class="notice-left-box-middle">
+          <div class="l_sell_background">
+            <table class="l_sell_div">
+              <tr>
+                <td><a href="">서울아산병원 갤러리 2024년 전시 신청</a> </td>
+                <td>2023.08.16</td>
+              </tr>
+              <tr>
+                <td><a href="">코로나19 예방을 위한 내원객 협조 안내</a></td>
+                <td>2023.08.02</td>
+              </tr>
+              <tr>
+                <td><a href="">서울아산병원 정보보호인증</a></td>
+                <td>2023.07.24</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="notice-left-box-bottom">
+          <div>
+            <img src="" alt="의료질지표">
+          </div>
+        </div>
+      </div>
+      <div class="news-right-box">
+        <a href="" class="news-right-box-top">뉴스</a>
+        <div class="news-right-box-middle">
+          <div class="r_sell_background">
+            <table class="r_sell_div">
+              <tr>
+                <td><a href="">서울아산병원, 승모판막 클립시술 국내 첫 100례</a> </td>
+                <td>2023.10.18</td>
+              </tr>
+              <tr>
+                <td><a href="">캄보디아 환자 초청 진료</a></td>
+                <td>2023.10.16</td>
+              </tr>
+              <tr>
+                <td><a href="">방사성의약품으로 암 진단 · 치료하는 ‘테라노스틱스’ ..</a></td>
+                <td>2023.07.24</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="news-right-box-bottom">
+          <div>
+            <img src="" alt="서울아산병원 뉴스룸">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sns 영역 -->
+  <div class="sns">
+    <h1>서울아산병원 SNS</h1>
+    <div class="sns_main_icons">
+      <div>
+        <a href=""><img src="./images/b01_facebook.png" alt="페이스북"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b02_instagram.png" alt="인스타"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b03_youtube.png" alt="유튭"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b04_naverblog.png" alt="네이버블로그"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b06_navertv.png" alt="네이버tv"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b07_kakaostory.png" alt="카카오스토리"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b08_naverpost.png" alt="네이버포스트"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/b09_kakaotv.png" alt="카카오티비"></a>
+      </div>
+    </div>
+  </div>
+  <!-- 기타 안내 영역 -->
+  <div class="etc-info">
+    <div>
+      <a href=""><img src="" alt="">병원둘러보기</a>
+    </div>
+    <div>
+      <a href=""><img src="" alt="">편의시설 </a>
+    </div>
+    <div>
+      <a href=""><img src="" alt="">고객의소리</a>
+    </div>
+    <div>
+      <a href=""><img src="" alt="">칭찬코너</a>
+    </div>
+    <div>
+      <a href=""><img src="" alt="">나눔/후원</a>
+    </div>
+    <div>
+      <a href=""><img src="" alt="">자원봉사</a>
+    </div>
+  </div>
+  <!-- 저작권 영역 -->
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="" alt="저작권로고">
+    </div>
+    <div>
+      <footer>
+        5505 서울특별시 송파구 올림픽로 43길 88 서울아산병원
+        TEL 1688-7575 / webmaster@amc.seoul.kr
+        Copyright@2014 by Asan Medical Center. All Rights reserved
+      </footer>
+    </div>
+    <div>
+      <div>
+        <a href="">환자권리장전</a>
+      </div>
+      <div>
+        <a href="">개인정보처리방침</a>
+      </div>
+      <div>
+        <a href="">이용약관</a>
+      </div>
+      <div>
+        <a href="">의료정보방침</a>
+      </div>
+      <div>
+        <a href="">비급여진료비</a>
+      </div>
+      <div>
+        <a href="">의무기록사본발급안내</a>
+      </div>
+      <div>
+        <a href="">위변조문서확인</a>
+      </div>
+      <div>
+        <a href="">이메일주소수집거부</a>
+      </div>
+      <div>
+        <a href="">원격지원서비스</a>
+      </div>
+      <div>
+        <a href="">홈페이지이용문의</a>
+      </div>
+    </div>
+    <div class="footer-icon1">
+      <div>
+        <a href=""><img src="" alt="흑백페북"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백인스타"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백유튭"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백네이버블로그"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백 X"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백네이버TV"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백카카오스토리"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백네이버포스트"></a>
+      </div>
+      <div>
+        <a href=""><img src="" alt="흑백카카오TV"></a>
+      </div>
+    </div>
+    <div class="footer-icon2">
+      <div>
+        <a href="">
+          <img src="./images/ban01.png" alt="국가인증1">
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="./images/ban03.png" alt="국가인증2">
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="./images/ban04.png" alt="국가인증3">
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="./images/ban02.png" alt="국가인증4">
+        </a>
+      </div>
+    </div>
+    <div class="qick-link">
+      <div>
+        <select>
+          <option value="">진료과</option>
+        </select>
+        <button>바로가기</button>
+      </div>
+    </div>
+    <div>
+      <select>
+        <option value="">재단 및 재단산하병원</option>
+      </select>
+      <button>바로가기</button>
+    </div>
+    <div>
+      <select>
+        <option value="">센터/클리닉/연구원/기타</option>
+      </select>
+      <button>바로가기</button>
+    </div>
+    <div>
+      <select>
+        <option value="">관련기관</option>
+      </select>
+      <button>바로가기</button>
+    </div>
+  </div>
 </body>
+
 </html>
