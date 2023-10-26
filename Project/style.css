@@ -2,7 +2,6 @@
 * {
   text-decoration: none;
   color: black;
-  white-space: wrap;
 }
 body {
   margin: 0;
@@ -174,7 +173,7 @@ input {
 }
 /* 건강 정보 영역 */
 .health-info {
-  background-color: tan;
+  background-color:darkgray ;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -183,7 +182,7 @@ input {
   text-align: center;
 }
 .health-info-main {
-  background-color: tan;
+  background-color:darkgoldenrod;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -285,7 +284,7 @@ input {
 }
 /* sns 영역 */
 .sns {
-  background-color: tan;
+  background-color: beige;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -306,5 +305,119 @@ input {
   gap: 20px;
 }
 /* 기타 안내 영역 */
-
+.etc-info {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  }
+.etc-info-main {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px
+}
+.circle {
+  background-color: #444444;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding-bottom: 20px;
+}
+.circle > a {
+  color: white;
+}
 /* 저작권 영역 */
+.footer {
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.footer-main {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-top {
+  background-color: beige;
+  display: flex;
+  gap: 50px;
+}
+.f_img {
+  display: flex;
+  background-color:green
+}
+.hy {
+  display: flex;
+  background-color: coral;
+  gap: 20px;
+}
+.footer-center {
+  background-color:khaki;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+}
+.footer-center-address {
+  display: flex;
+  background-color: greenyellow;
+  text-align: center;
+}
+
+.quick-box {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.quick-link-top {
+  background-color: cornflowerblue;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+.quick-link-bottom {
+  background-color: silver;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+.awards {
+  background-color: lightsalmon;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.footer-bottom {
+  background-color: cornflowerblue;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.footer-icon-box {
+  background-color: turquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100px;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.footer-bottom > .footer-icon-box > div > a {
+  font-size: 10px;
+}

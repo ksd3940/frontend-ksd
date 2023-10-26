@@ -27,3 +27,21 @@
 #movexy:hover {
   transform: translate(10px, 20px);
 }
+
+#scalex {
+  transform: scaleX(2);
+}
+#scaley {
+  transform: scaleY(1.5);
+}
+#scale {
+  transform: scaleX(0.1);
+}
+
+#rotate1:hover {
+  transform: rotate(40deg);
+}
+
+#rotate2:hover {
+  transform: rotate(-40deg);
+}

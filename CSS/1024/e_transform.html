@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>transition & animation</title>
   <link rel="stylesheet" href="./styles/e_transform.css">
 </head>
+
 <body>
   <!--  
     transform(변형)
@@ -31,8 +33,18 @@
       translateX(tx)
       translateY(ty)
       translateZ(tz)
-
-  -->
+    ? scale 함수
+    : 지정한 크기만큼 요소를 확대 / 축소
+      scale(sx, sy)
+      > 값이 하나일 경우 sx값으로 간주 sy는 sx값과 같다고 간주
+      > scale(2, 2) == scale(2)
+    ? rotate 함수
+    : 각도만큼 웹 요소를 시계방향 | 시계 반대 방향으로 회전
+    속성값 
+    ? 일반각도 (degree)
+    ? 레디안 (1radian - 1/180도)  
+    -->
+  <h2>translate</h2>
   <div id="container">
     <div class="origin">
       <div id="movex"></div>
@@ -44,5 +56,42 @@
       <div id="movexy"></div>
     </div>
   </div>
+  <hr />
+  <h2>scale</h2>
+  <div id="container">
+    <div class="origin">
+      <div id="scalex"></div>
+    </div>
+    <div class="origin">
+      <div id="scaley"></div>
+    </div>
+    <div class="origin">
+      <div id="scale"></div>
+    </div>
+  </div>
+  <hr />
+  <h2>rotate</h2>
+  <div id="container">
+    <div class="origin" id="rotate1">
+      <img src="../../Project/images/b02_instagram.png" alt="rorate1">
+    </div>
+    <div class="origin" id="rotate2">
+      <img src="../../Project/images/b02_instagram.png" alt="rorate2">
+    </div>
+  </div>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="../../Project/images/" alt="">
