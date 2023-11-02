@@ -1,5 +1,5 @@
 body {
-  background-image: url('../../../HTML/diff-directory.jpg');
+  background-image: url(../../../Project/images/b01_facebook.png);
   background-repeat: repeat-x;
   color: white;
   background-attachment: fixed;
@@ -34,10 +34,10 @@ ul {
 }
 
 li {
-  background-image: url(../../../HTML/diff-directory.jpg);
+  background-image: url(../../../Project/images/b01_facebook.png);
   background-size: 50px;
   background-repeat: no-repeat;
-  background-position: left ceter;
+  background-position: left center;
   padding-left: 50px;
   line-height: 50px;
 }
@@ -51,7 +51,7 @@ li {
   border: 1px solid #222222;
   height: 150px;
   width: 150px;
-  background-image: url(../../../HTML/diff-directory.jpg);
+  background-image: url(../../../Project/images/b01_facebook.png);
 }
 #background1 {
   background-size: auto;
