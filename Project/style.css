@@ -1,13 +1,19 @@
 /* 페이지 전체설정 */
+* {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
 body {
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll
 }
 /* 상단 로그인 영역*/
 .login-options {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   background-color: #444444;
   width: 100%;
@@ -17,9 +23,10 @@ body {
 
 .login-options-nav {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   gap: 10px;
-  align-items: center;
   margin-left: 725px;
 }
 
@@ -43,13 +50,15 @@ body {
   height: 85px;
   font-weight: 600;
 }
+
 .logo_hy a {
   text-decoration: none;
   color: black;
 }
-/* 메인 베너 영역 */
+
+/* 베너 영역 */
 .banner {
-  display: inline-block;
+  display: flex;
   width: 100%;
   height: 450px;
   position: absolute;
@@ -59,20 +68,20 @@ body {
   background-size: 100% 450px;
 }
 
-/* 메인 베너 밑 검색 영역 */
+/* 베너 밑 검색 영역 */
 .search {
   display: flex;
-  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: #009999;
   width: 100%;
   height: 80px;
+  position: relative;
   top: 575px;
 }
 
 .search-box {
-  display: inline-flex;
+  display: flex;
   gap: 15px;
   align-items: center;
 }
@@ -84,7 +93,7 @@ body {
 
 .search-box > input {
   border: 1px solid #009999;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   height: 50px;
   width: 550px;
 }
@@ -93,10 +102,12 @@ body {
 .main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: absolute;
   width: 100%;
   top: 650px;
+  padding: 65px 0;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -108,27 +119,28 @@ body {
 }
 
 .service1 {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 1200px;
+  height: 200px;
 }
 
 .service1-hy {
-  width: 240px;
-  height: 200px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   background-color: #f9f9f9;
+  width: 240px;
+  height: 198px;
 }
 
-.service1-hy > a {
-  position: relative;
-  bottom: 50px;
-  font-size: 20px;
+.service1-hy a {
+  display: flex;
   text-decoration: none;
   color: black;
+  font-size: 20px;
+  margin-top: 80px;
 }
 
 #service1-hy1 {
@@ -136,36 +148,28 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 10px 0 0 10px;
-  border-width: 1px 0 1px 1px;
-  border-style: solid;
-  border-color: #999999;
+  border: 1px solid #999999;
 }
 
 #service1-hy2 {
   background-image: url(./images/ico_serv_dept.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border-width: 1px 0 1px 0;
-  border-style: solid;
-  border-color: #999999;
+  border: 1px solid #999999;
 }
 
 #service1-hy3 {
   background-image: url(./images/ico_serv_resv.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border-width: 1px 0 1px 0;
-  border-style: solid;
-  border-color: #999999;
+  border: 1px solid #999999;
 }
 
 #service1-hy4 {
   background-image: url(./images/ico_serv_first.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border-width: 1px 0 1px 0;
-  border-style: solid;
-  border-color: #999999;
+  border: 1px solid #999999;
 }
 
 #service1-hy5 {
@@ -173,75 +177,72 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 0 10px 10px 0;
-  border-width: 1px 1px 1px 0;
-  border-style: solid;
-  border-color: #999999;
+  border: 1px solid #999999;
 }
 
 .service2 {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  position: relative;
-  gap: 30px;
-  width: 100%;
+  width: 1200px;
   height: 90px;
-  padding: 50px 0;
+  padding-top: 40px;
+  gap: 30px;
 }
 
 .service2-hy {
-  display: inline-flex;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 380px;
-  border: 1px solid;
+  border: 1px solid #249b9f;
   border-radius: 10px;
+  width: 380px;
 }
 
-.service2-hy > a {
+.service2-hy a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  position: absolute;
-  margin-left: 20px;
+  margin-right: 100px;
 }
 
 #service2-hy1 {
-  background-color: #249b9f;
-  border-color: #249b9f;
   background-image: url(./images/ico_serv_certi.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 290px -5px;
+  background-position: 280px 0;
+  background-color: #249b9f;
 }
 
 #service2-hy2 {
-  background-color: #60cdc7;
-  border-color: #60cdc7;
   background-image: url(./images/ico_serv_duty.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 290px -5px;
+  background-position: 280px 0;
+  background-color: #60cdc7;
 }
 
 #service2-hy3 {
-  background-color: #249b9f;
-  border-color: #249b9f;
   background-image: url(./images/ico_serv_downi.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 290px -5px;
+  background-position: 280px 0;
+  background-color: #249b9f;
 }
 
 /* 예약 및 문의 영역 */
 .info {
   display: flex;
-  position: absolute;
   justify-content: center;
+  position: absolute;
   width: 100%;
-  top: 1145px;
+  top: 1150px;
   gap: 40px;
   padding: 80px 0;
 }
 
 .left-box {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   width: 580px;
@@ -250,7 +251,7 @@ body {
 }
 
 .left-box-in-top {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
@@ -283,11 +284,12 @@ body {
 }
 
 .left-box-in-bottom {
-  display: inline-flex;
+  display: flex;
   gap: 40px;
 }
+
 .left-box-in-bottom-box {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
@@ -314,18 +316,19 @@ body {
 }
 
 .right-box {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 580px;
   height: 330px;
   gap: 40px;
 }
+
 .right-box-in-top {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 578px;
   height: 330px;
@@ -335,7 +338,7 @@ body {
 
 .right-box-in-top-1,
 .right-box-in-top-2 {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 530px;
@@ -344,7 +347,7 @@ body {
 }
 
 .rbhy1 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -367,7 +370,7 @@ body {
 }
 
 .rbhy2 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ff9c1d;
@@ -389,14 +392,14 @@ body {
 }
 
 .right-box-in-bottom {
-  display: inline-flex;
+  display: flex;
   gap: 40px;
 }
 
 .right-box-in-bottom-box {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   width: 270px;
@@ -427,156 +430,228 @@ body {
 /* 건강 정보 영역 */
 .health-info {
   display: flex;
-  position: absolute;
   justify-content: center;
-  top: 1635px;
+  flex-direction: column;
+  position: absolute;
+  top: 1640px;
   width: 100%;
+  padding: 80px 0;
   background-color: #f9f9f9;
 }
 
-.health-head {
-  
+.health-info-main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 1200px;
+  height: 535px;
+}
+
+.health-topbox {
+  display: flex;
+  justify-content: center;
   font-size: 45px;
   font-weight: 650;
   width: 1200px;
   height: 60px;
 }
 
-.health-leftbox {
-
-  width: 580px;
-  height: 455px;
+.health-bottombox {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
 }
 
-.health-leftbox-in-top {
+.health-leftbox,
+.health-rightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 578px;
-  height: 288px;
+  height: 445px;
+  gap: 50px;
+}
+
+.health-leftbox-in-top,
+.health-rightbox-in-top {
   border: 1px solid #ddd;
   border-radius: 10px;
-}
-.health-leftbox_title {
-  width: 578px;
-  height: 36px;
-}
-.health-leftbox-img {
-  width: 578px;
-  height: 180px;
+  width: 100%;
+  height: 288px;
+  gap: 30px;
+  padding-top: 35px;
 }
 
-.health-leftbox-in-bottom {
-  
+.hbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 36px;
+}
+
+.hbox > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+#h_thumbnail1,
+#h_thumbnail2 {
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: 100% 180px;
+  margin-top: 20px;
+}
+#h_thumbnail1 {
+  background-image: url(./images/mqdefault1.jpg);
+}
+#h_thumbnail2 {
+  background-image: url(./images/mqdefault2.jpg);
+}
+.health-leftbox-in-bottom,
+.health-rightbox-in-bottom {
+  display: flex;
+  width: 580px;
+  height: 80px;
   gap: 40px;
 }
 
-.health-leftbox-in-bottom-box {
-  
-  gap: 10px;
+.health-bottombox-box4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 270px;
   height: 80px;
   border: 1px solid #cdcdcd;
   border-radius: 10px;
-  background-color: #ff9c1d;
+  padding-left: 30px;
 }
 
-.health-hyper > a {
+.health-bottombox-box4 > a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: 400;
 }
 
-.health-rightbox {
-  width: 580px;
-  height: 455px;
-}
-.health-rightbox-in-top {
-  
-  width: 578px;
-  height: 288px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-.health-rightbox_title {
-  width: 578px;
-  height: 36px;
-}
-.health-rightbox-img {
-  width: 578px;
-  height: 180px;
+#etc_1,
+#etc_2 {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: #ff9c1d;
 }
 
-.health-rightbox-in-bottom {
-  gap: 40px;
-}
-
-.health-rightbox-in-bottom-box {
-  
-  gap: 10px;
-  width: 270px;
-  height: 80px;
-  border: 1px solid #cdcdcd;
-  border-radius: 10px;
+#etc_3,
+#etc_4 {
+  background-repeat: no-repeat;
+  background-position-x: right;
   background-color: #009999;
 }
-
+#etc_1 {
+  background-image: url(./images/ico_health_dise.png);
+}
+#etc_2 {
+  background-image: url(./images/ico_health_symp.png);
+}
+#etc_3 {
+  background-image: url(./images/ico_health_check.png);
+}
+#etc_4 {
+  background-image: url(./images/ico_health_drug.png);
+}
 
 /* 소식 / 뉴스 영역 */
-.notice_news {
+.notice-news {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 2335px;
   background-color: tan;
   width: 100%;
-  justify-content: center;
+  padding: 80px 0;
 }
+
 .notice-news-main {
-  background-color: darkgrey;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 50px;
-}
-.notice-left-box,
-.news-right-box {
-  background-color: cadetblue;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  align-self: center;
+  background-color: yellow;
 }
-.l_sell_background,
-.r_sell_background {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: chocolate;
+.main-box {
+  
 }
-.l_sell_div,
-.r_sell_div > tr,
-td {
-  border: 2px solid black;
+
+.main-in-box-top {
 }
-.notice-left-box-bottom,
-.news-right-box-bottom {
-  background-color: aquamarine;
-  display: flex;
+
+.main-in-box-middle{
+ 
 }
+
+.sell_background {
+
+}
+
+.sell_div {
+
+}
+
+.main-box-bottom {
+
+}
+
+.main-box-bottom-hy {
+
+}
+
+.main-box-bottom-hy > a {
+
+}
+
+#notice-news-bottom-hy1{
+
+}
+
+#notice-news-bottom-hy2 {
+
+}
+
 /* sns 영역 */
 .sns {
   background-color: beige;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
 }
-.sns_main_head,
-.sns_main_icons {
-  margin: 10px 0;
-}
+
 .sns > h1 {
   background-color: aqua;
   text-align: center;
 }
+
 .sns_main_icons {
   background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
+.sns_main_head {
+  margin: 10px 0;
+}
+
 /* 기타 안내 영역 */
 .etc-info {
   background-color: aqua;
@@ -584,6 +659,7 @@ td {
   justify-content: center;
   padding: 20px;
 }
+
 .etc-info-main {
   background-color: beige;
   display: flex;
@@ -591,6 +667,7 @@ td {
   width: 1000px;
   height: 100px;
 }
+
 .circle {
   background-color: #444444;
   display: flex;
@@ -599,12 +676,14 @@ td {
   align-items: center;
   width: 100px;
   border: 1px solid white;
-  border-radius: 100%;
+  border-radius: 50%; /* 변경: 100%에서 50%로 수정 */
   padding-bottom: 20px;
 }
+
 .circle > a {
   color: white;
 }
+
 /* 저작권 영역 */
 .footer {
   background-color: #999999;
@@ -612,6 +691,7 @@ td {
   justify-content: center;
   padding: 50px;
 }
+
 .footer-main {
   background-color: aqua;
   display: flex;
@@ -619,20 +699,24 @@ td {
   flex-direction: column;
   gap: 10px;
 }
+
 .footer-top {
   background-color: beige;
   display: flex;
   gap: 50px;
 }
+
 .f_img {
   display: flex;
   background-color: green;
 }
+
 .hy {
   display: flex;
   background-color: coral;
   gap: 20px;
 }
+
 .footer-center {
   background-color: khaki;
   display: flex;
@@ -640,6 +724,7 @@ td {
   gap: 150px;
   align-items: center;
 }
+
 .footer-center-address {
   display: flex;
   background-color: greenyellow;
@@ -653,6 +738,7 @@ td {
   flex-direction: column;
   padding: 10px;
 }
+
 .quick-link-top {
   background-color: cornflowerblue;
   display: flex;
@@ -660,6 +746,7 @@ td {
   justify-content: center;
   gap: 10px;
 }
+
 .quick-link-bottom {
   background-color: silver;
   display: flex;
@@ -667,18 +754,21 @@ td {
   justify-content: center;
   gap: 10px;
 }
+
 .awards {
   background-color: lightsalmon;
   display: flex;
   padding: 10px;
   gap: 10px;
 }
+
 .footer-bottom {
   background-color: cornflowerblue;
   display: flex;
   padding: 10px;
   flex-direction: column;
 }
+
 .footer-icon-box {
   background-color: turquoise;
   display: flex;
@@ -690,6 +780,7 @@ td {
   gap: 10px;
   text-align: center;
 }
+
 .footer-bottom > .footer-icon-box > div > a {
   font-size: 10px;
 }
