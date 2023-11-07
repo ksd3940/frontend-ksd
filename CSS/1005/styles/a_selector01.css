@@ -1,4 +1,3 @@
-/* 동시 선택자 */
 h1, h2, p {
   color: green;
 }
@@ -15,10 +14,9 @@ section > p {
 
 /* 인접 형제 선택자 */
 h1 + p {
-  background-color: black; 
+  background-color: black;
 }
 
-/* 형제 선택자 */
 h1 ~ p {
   font-weight: bolder;
 }

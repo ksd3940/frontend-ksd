@@ -20,7 +20,7 @@ aside ul {
 
 nav a:link,
 nav a:visited {
-  background-color: rgba(207, 232, 220, 0.2);
+  background-color: rgba(207 , 232, 220, 0.2);
   border: 2px solid rgb(79, 185, 227);
   text-decoration: none;
   display: block;
@@ -33,7 +33,7 @@ nav a:hover {
   background-color: rgba(207, 232, 220, 0.7);
 }
 
-/* 반응형 디자인 (미디어쿼리X) */
+/* 반응형 디자인(미디어쿼리X) */
 .grid {
   list-style: none;
   margin: 0;
@@ -42,10 +42,12 @@ nav a:hover {
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
+
 .grid li {
   border: 1px solid #666;
   padding: 10px;
 }
+
 .related {
   background-color: rgba(79, 185, 227, 0.3);
   border: 1px solid rgb(79, 185, 227);
@@ -53,7 +55,7 @@ nav a:hover {
 }
 
 .sidebar {
-  background-color: rgba(227, 232, 220, 0.5);
+  background-color: rgba(207, 232, 220, 0.5);
   padding: 10px;
 }
 
@@ -73,6 +75,7 @@ article {
     /* ul의 자식 요소들을 수평으로 나열 */
     display: flex;
   }
+
   nav li {
     /* nav li요소가 동일한 공간을 차지 */
     flex: 1;
@@ -85,10 +88,12 @@ article {
     grid-template-columns: 3fr 1fr;
     column-gap: 20px;
   }
+
   article {
-    /* 두 개의 사이드 바가 서로 나란히 정렬되로록 문서의 mb을 제거 */
+    /* 두 개의 사이드 바가 서로 나란히 정렬되도록 문서의 mb을 제거 */
     margin-bottom: 0;
   }
+
   footer {
     border-top: 1px solid #ccc;
     margin-top: 2em;

@@ -5,16 +5,15 @@ a[href] {
   font-weight: bolder;
 }
 
-/* href 속성 값이 https:// naver.com 인 요소만 적용 */
+/* href 속성 값이 https://naver.com 인 요소만 적용 */
 a[href = "https://naver.com"] {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /* class 속성에 button 값이 있는 요소를 찾는 선택자 */
 li {
   list-style: none;
   margin: 10px;
-  
 }
 
 [class ~= "button"] {
@@ -23,9 +22,10 @@ li {
 
 /* 외국어 서비스 예제 */
 
-a[title |=us] {
+a[title |= us] {
   background-color: beige;
 }
-a[title |=chn] {
+
+a[title |= chn] {
   background-color: green;
 }

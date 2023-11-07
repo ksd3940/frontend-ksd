@@ -8,7 +8,7 @@ p:only-of-type {
   font-weight: bold;
 }
 
-/* 첫 번재 자식요소 */
+/* 첫 번째 자식요소 */
 li:first-child {
   color: red;
 }
@@ -18,7 +18,8 @@ li:last-child {
   color: blue;
 }
 
-/* 특정 타입의 첫 번재 요소 */
+
+/* 특정 타입의 첫 번째 요소 */
 p:first-of-type {
   font-style: italic;
 }
@@ -33,23 +34,23 @@ li:nth-child(3) {
   background-color: #4d4d4d;
 }
 
-/* n번재 타입의 요소 */
+/* n번째 타입의 요소 */
 p:nth-of-type(2) {
   color: green;
 }
 
-/* ! 가상 요소 선택자 예제 */
+/*! 가상 요소 선택자 예제 */
 
 /* 섹션 제목 앞 뒤로 장식 추가 */
 .section-title::before,
 .section-title::after {
   content: "###";
-  color: #0068e9;
+  color: #0068E9;
   margin: 0 5px;
 }
 
-/* 섹션의 마지막 문단에 별표 추가 */
+/* 섹션의 마지막 문단에 하트 추가 */
 .section p:last-of-type::after {
-  content: "♥︎";
+  content: " ❤";
   color: #ffd700;
 }

@@ -1,15 +1,17 @@
 body {
-  background-image: url(../../../Project/images/b01_facebook.png);
+  background-image: url('../../../images/lotte.jpeg');
   background-repeat: repeat-x;
-  color: white;
   background-attachment: fixed;
 }
+
 #container {
   display: flex;
+
 }
+
 .desc {
   border: 5px dotted #222222;
-  background-color: #FFd9a0;
+  background-color: #ffd9a0;
   width: 350px;
   padding: 20px;
   margin-right: 20px;
@@ -34,43 +36,41 @@ ul {
 }
 
 li {
-  background-image: url(../../../Project/images/b01_facebook.png);
+  background-image: url(../../../images/lotte.jpeg);
   background-size: 50px;
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 50px;
   line-height: 50px;
 }
-/* 배경 이미지 크기 */
-#container {
-  width: 500px;
-  height: 500px;
-  display: flex;
-}
+
+/* 배경 이미지 크기 조절 */
+
 #container > div {
   border: 1px solid #222222;
-  height: 150px;
   width: 150px;
-  background-image: url(../../../Project/images/b01_facebook.png);
+  height: 150px;
+  background-image: url('../../../images/lotte.jpeg');
 }
-#background1 {
+
+#bg1 {
   background-size: auto;
 }
-#background2 {
+#bg2 {
   background-size: 200px;
 }
-#background3 {
+#bg3 {
   /* 너비는 요소 기준으로 50%, 높이는 자동계산 */
   background-size: 50%;
 }
-#background4 {
+#bg4 {
   background-size: 100% 100%;
 }
-#background5 {
+#bg5 {
   /* 요소의 배경 이미지가 다 보이게 표시 */
   background-size: contain;
 }
-#background6 {
+#bg6 {
   /* 요소를 완전히 덮도록 배경 이미지 표시 */
   background-size: cover;
 }

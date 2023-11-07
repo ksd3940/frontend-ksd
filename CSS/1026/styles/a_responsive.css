@@ -1,14 +1,15 @@
-/* @media screen and (max-width: 800px) and (max-height: 500px) and (orientation: landscape) 
-{
+/* 
+@media screen and (max-width: 800px) and (max-height: 500px) and (orientation: portrait) {
   body {
     background-color: aquamarine;
   }
-}  */
+} 
+*/
 
-
-/* @media screen (hover:hover) {
+/* 
+@media screen and (hover: hover) {
   body {
-    background-color: blue;
+    color: rebeccapurple;
   }
-  
-}   */
+} 
+*/

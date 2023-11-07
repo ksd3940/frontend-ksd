@@ -6,7 +6,9 @@
 
 /* 태그 선택자 */
 p {
-  /* 글자 두께를 지정하는 css 속성 */
+  /* 
+  글자 두께를 지정하는 css 속성 
+  */
   font-weight: bold;
 }
 
@@ -16,10 +18,11 @@ p {
 }
 
 .underFive {
+  /* font-size: 텍스트 크기를 지정하는 css 속성 */
   font-size: x-large;
 }
 
-/* text-decoration: 텍스트를 꾸미는 css 속성  */
+/* text-decoration: 텍스트를 꾸미는 css 속성 */
 .oddNumber.underFive {
   text-decoration: underline;
 }
@@ -32,14 +35,10 @@ p {
 
 #container {
   width: 500px;
-  border: 1px solid black;
+  border: 1px solid black; /* 테두리 */
 }
 
 /* 그룹 선택자 */
 h2, h3 {
   color: blue;
-}
-
-h2, h3 {
-  color: yellowgreen;
 }

@@ -1,5 +1,5 @@
 body {
-  font-family:'Courier New', Courier, monospace;
+  font-family: '맑은 고딕', 돋움, 굴림;
 }
 
 .one {
@@ -13,7 +13,7 @@ body {
 
 .three {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .four {

@@ -3,19 +3,19 @@ body {
   max-width: 900px;
   margin: 20px auto;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 20px;
   /* grid-template-areas */
-  grid-template-areas:
+  grid-template-areas: 
     "header header"
     "sidebar content"
     "footer footer";
 }
 
-header,
-footer {
+header, footer {
   border: 2px solid rgb(79, 185, 227);
   border-radius: 5px;
   padding: 10px;
@@ -27,8 +27,7 @@ aside {
 }
 
 /* CSS Item Grid 라인 설정 */
-
-header {
+/* header {
   grid-column: 1 / 3;
   grid-row: 1;
 }
@@ -46,10 +45,13 @@ aside {
 footer {
   grid-column: 1 / 3;
   grid-row: 3;
-}
+} */
 
-/* grid-template-areas 위치잡기 */
-/* header {
+/* 
+  grid-template-areas 위치 잡기
+    : 위 속성에서 지정한 이름 그대로 원하는 위치에 첨부
+ */
+header {
   grid-area: header;
 }
 
@@ -63,4 +65,4 @@ aside {
 
 footer {
   grid-area: footer;
-} */
+}
