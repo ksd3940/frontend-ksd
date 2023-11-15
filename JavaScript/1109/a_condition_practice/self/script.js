@@ -5,10 +5,10 @@
 // 해당 age 변수 값이 0미만이거나 120초과일 경우
 // 콘솔창에 Invalid age.를 출력
 
-let age = prompt("Please enter your age.");
+let age = prompt('Please enter your age.');
 
 if (age < 0 || age > 120) {
-  console.log("Invalid age.");
+  console.log('Invalid age.');
 }
 
 //? 2. 점수에 따른 등급 부여 (else if문)
@@ -21,20 +21,20 @@ if (age < 0 || age > 120) {
 // 그 밖의 점수일 경우 F
 // >> 모두 콘솔창에 출력
 
-let score = prompt("Please enter your score.");
+let score = prompt('Please enter your score.');
 
 if (score < 0 || score > 100) {
-  console.log("Invalid score");
+  console.log('Invalid score');
 } else if (score >= 90) {
-  console.log("A");
+  console.log('A');
 } else if (score >= 80) {
-  console.log("B");
+  console.log('B');
 } else if (score >= 70) {
-  console.log("C");
+  console.log('C');
 } else if (score >= 60) {
-  console.log("D");
+  console.log('D');
 } else {
-  console.log("F");
+  console.log('F');
 }
 
 //? 3. 요일에 따른 활동 추천(switch문)
@@ -48,8 +48,8 @@ let day = new Date().getDay();
 console.log(day); // 오늘 날짜를 기준으로 4(목요일) 출력
 
 // 0: 일요일 "It's Sunday. Take a rest!"
-// 1 ~ 5: 평일 "It's a weekay. Let's work hard!"
-// 6: 토요일 "It's Saturady. Enjoy your weekend!"
+// 1 ~ 5: 평일 "It's a weekly. Let's work hard!"
+// 6: 토요일 "It's Saturday. Enjoy your weekend!"
 // default: "Invalid day."
 
 switch (day) {
@@ -61,10 +61,10 @@ switch (day) {
   case 3:
   case 4:
   case 5:
-    console.log("It's a weekay. Let's work hard!");
+    console.log("It's a weekly. Let's work hard!");
     break;
   case 6:
-    console.log("It's Saturady. Enjoy your weekend!");
+    console.log("It's Saturday. Enjoy your weekend!");
     break;
   default:
     console.log("Invalid day.");
@@ -72,20 +72,20 @@ switch (day) {
 
 //! 삼항연산자 예제(배경색 변경)
 
-const html = document.querySelector("html");
-const select = document.querySelector("select");
-const div = document.querySelector("div");
+const html = document.querySelector('html');
+const select = document.querySelector('select');
+const div = document.querySelector('div');
 
-document.body.style.padding = "10px";
-div.style.marginTop = "100px";
+document.body.style.padding = '10px';
+div.style.marginTop = '100px';
 
-function update(bgColor, textColor) {
+function update (bgColor, textColor) {
   html.style.backgroundColor = bgColor;
   html.style.color = textColor;
 }
 
 select.onchange = function () {
-  select.value === "black"
-    ? update("black", "white")
-    : update("white", "black");
+  select.value === 'black'
+    ? update('black', 'white')
+    : update('white', 'black');
 };

@@ -139,7 +139,7 @@
   margin-top: -8px;
   background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png);
   background-size: 266px 225px;
-  background-position: -130px -203px;
+  background-position: -129px -203px;
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
@@ -263,6 +263,7 @@
   background-color: #dadada;
 }
 
+/* Banner 영역 스타일링 */
 .banner-wrapper {
   width: 460px;
   height: 147px;
@@ -282,6 +283,7 @@
   height: 147px;
 }
 
+/* Footer 영역 스타일링 */
 .footer {
   padding: 63px 0 32px;
 }
@@ -342,7 +344,6 @@
 }
 
 /* 로그인 에러 메시지 출력 스타일링 */
-
 .sign-in-error {
   position: relative;
   min-height: 34px;
@@ -357,5 +358,4 @@
   letter-spacing: -0.5px;
   color: #ff003e;
   vertical-align: middle;
-  
 }
