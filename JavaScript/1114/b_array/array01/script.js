@@ -31,9 +31,9 @@ console.log(arrayWithNew);
 // Array 생성자의 특징
 // : 한 개의 숫자 인자를 가지는 경우
 // : >> 해당 숫자만큼의 길이를 가진 빈 배열을 생성
-let arrayLengthTwo = new Array(2);
+let arrayLenghtTwo = new Array(2);
 let arrayWithTwo = new Array('2');
-console.log(arrayLengthTwo); // 길이가 2인 빈 배열
+console.log(arrayLenghtTwo); // 길이가 2인 빈 배열
 console.log(arrayWithTwo); // '2'라는 하나의 요소를 포함하는 배열을 생성
 
 //! 배열 조작 및 접근
@@ -103,7 +103,7 @@ console.log(cars);
 // : 배열의 기존 요소를 삭제 또는 교체
 // : | 새 요소를 추가하여 배열의 내용을 변경
 
-// 배열.splice(start, deleteCount, item1, item2, ...);
+// 배열.aplice(start, deleteCount, item1, item2, ...);
 
 // start(필수값): 변경을 시작할 인덱스 번호
 // : 해당 시작 인덱스부터 요소가 제거되거나 새로운 요소가 삽입

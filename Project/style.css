@@ -567,8 +567,6 @@ body {
 
 /* 소식 / 뉴스 영역 */
 .notice-news {
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 2400px;
   background-color: tan;
@@ -578,9 +576,7 @@ body {
 
 .notice-news-main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
+  justify-content: center;
   background-color: yellow;
 }
 .main-box {

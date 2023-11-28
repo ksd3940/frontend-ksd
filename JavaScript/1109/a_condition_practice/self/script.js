@@ -48,8 +48,8 @@ let day = new Date().getDay();
 console.log(day); // 오늘 날짜를 기준으로 4(목요일) 출력
 
 // 0: 일요일 "It's Sunday. Take a rest!"
-// 1 ~ 5: 평일 "It's a weekly. Let's work hard!"
-// 6: 토요일 "It's Saturday. Enjoy your weekend!"
+// 1 ~ 5: 평일 "It's a weekay. Let's work hard!"
+// 6: 토요일 "It's Saturady. Enjoy your weekend!"
 // default: "Invalid day."
 
 switch (day) {
@@ -61,10 +61,10 @@ switch (day) {
   case 3:
   case 4:
   case 5:
-    console.log("It's a weekly. Let's work hard!");
+    console.log("It's a weekay. Let's work hard!");
     break;
   case 6:
-    console.log("It's Saturday. Enjoy your weekend!");
+    console.log("It's Saturady. Enjoy your weekend!");
     break;
   default:
     console.log("Invalid day.");

@@ -15,55 +15,52 @@
 // : 관례적으로 함수명의 첫 글자는 대문자로 시작
 function Person(firstPara, last, age, gender, interests) {
   this.name = {
-    first: firstPara,
-    last: last,
+    'first': firstPara,
+    'last': last
   };
   this.age = age;
   this.gender = gender;
   this.interests = interests;
-  this.bio = function () {
+  this.bio = function() {
     let string = this.name.first + this.name.last;
     console.log(string);
   };
-  this.greeting = function () {
-    console.log("Hi" + this.name.first);
-  };
+  this.greeting = function() {
+    console.log('Hi' + this.name.first);
+  }
 }
 
-//  객체명.객체속성 = 객체값
+// 생성자 함수를 사용한 객체 생성
+let person1 = new Person('Seungah', 'Lee', 30, 'female', 'music');
 
-//  생성자 함수를 사용한 객체 생성
-let person1 = new Person("SaeDong", "Kong", 30, "male", "music");
+console.log(typeof(person1)); 
 
-console.log(typeof person1);
+//! Object.create()를 사용한 객체 생성 방법
+// : create() 메소드는 프로토타입을 설정할 수 있는 새로운 객체 생성 방법
+// : 지정된 프로토타입 객체 및 속성을 갖는 새로운 객체를 생성
 
-console.log(Object.prototype);
+let personProto = {
+  greet: function() {
+    console.log('Hello, my name is ' + this.name);
+  }
+}
 
-//! object.create()를 사용한 객체 생성 방법
-//  : create() 메소드는 프로토타입을 설정할 수 있는 새로운 객체 생성 방법
-//  : 지정된 프로토타입 객체 및 속성을 갖는 새로운 객체를 생성
+let personA = Object.create(personProto);
+// 객체의 프로퍼티 생성
+personA.name = 'Lee Do Kyung'; 
+personA.age = 29;
+personA.job = 'employee';
 
-let PersonProto = {
-  greet: function () {
-    console.log("Hello, my name is " + this.name);
-  },
-};
-
-let PersonA = Object.create(PersonProto);
-PersonA.name = "kong sae dong";
-PersonA.age = 30;
-PersonA.job = "empty";
-
-PersonA.greet();
+personA.greet();
 
 //! 클래스를 사용한 객체 생성 방법
-//  클래스는 객체 지향 언어에서 볼 수 있는 다양한 특징들을 자바스크립트에 추가한 것
-//  기존의 프로토타입 기반ㄴ 상속보다 더 직관적인 방식으로 객체를 생성하고 상속 가능
+// 클래스는 객체 지향 언어에서 볼 수 있는 다양한 특징들을 자바스크립트에 추가한 것
+// 기존의 프로토타입 기반 상속보다 더 직관적인 방식으로 객체를 생성하고 상속 가능
 
-//  class키워드로 객체 정의
-//  클래스명은 시작문자를 대문자로 사용하는 것을 권장
+// class키워드로 객체 정의
+// 클래스명은 시작문자를 대문자로 사용하는 것을 권장
 class Person2 {
-  //  생성자
+  // 생성자
   constructor(name, age, job) {
     this.name = name;
     this.age = age;
@@ -75,5 +72,5 @@ class Person2 {
   }
 }
 
-let PersonB = new Person2('Kong Sae Dong', 30, 'empty');
-PersonB.greet();
+let personB = new Person2('Lee Seung Ah', 26, 'developer');
+personB.greet();

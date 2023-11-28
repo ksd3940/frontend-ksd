@@ -1,4 +1,4 @@
-//! 객체
+//! 객체 
 
 //! 1. 객체(object)의 정의
 // : 관련된 데이터와 함수의 집합
@@ -9,43 +9,42 @@
 
 // 객체는 데이터 타입 중 하나, 다양한 값을 담을 수 있는 컨테이너
 // : 따라서 배열도 여러 타입의 자료를 담는 것이 가능한 객체의 일부
-console.log(typeof []); // object
+console.log(typeof([])); // object
 
-// 객체를 생성하기 위해서는 JS의 다른 요소들과
+// 객체를 생성하기 위해서는 JS의 다른 요소들과 
 // , 마찬가지로 변수를 정의하고 초기화하여 시작
 // 객체는 중괄호{}를 사용하여 초기화
 let person = {
   //? 데이터
   // : 객체의 프로퍼티(속성)
-  // name: ['Kong', 'SaeDong'],
+  // name: ['Lee', 'SeungAh'],
   name: {
     // 하위 namespace 생성
-    last: "kong",
-    first: "SaeDong",
+    last: 'lee',
+    first: 'SeungAh'
   },
-  age: 30,
-  gender: "male",
-  interests: ["develope", "music"],
+  age: 27,
+  gender: 'female',
+  interests: ['develope', 'music'],
 
   //? 함수
   // : 객체의 메소드(method, 메서드)
-  bio: function () {
+  bio: function() {
     alert(
       this.name.first +
-        " " +
-        this.name.last +
-        " is " +
-        this.age +
-        " years old. his likes " +
-        this.interests[0] +
-        " and " +
-        this.interests[1] +
-        "."
+      " " +
+      this.name.last +
+      " is " +
+      this.age +
+      " years old. She likes " +
+      this.interests[0] + 
+      " and " + 
+      this.interests[1] + "."
     );
   },
-  greeting: function () {
+  greeting: function() {
     alert("Hi I'm " + this.name.last + ".");
-  },
+  }
 };
 
 // 객체는 다른 이름값을 갖는 복수개의 멤버로 구성
@@ -64,12 +63,12 @@ let person = {
 
 //! 2.객체의 기본 형태
 let objectName = {
-  member1Name: "member1Value",
+  member1Name: 'member1Value',
   member2Name: 2,
-  member3Name: true,
+  member3Name: true
 };
 // 객체의 값으로는 JS에 있는 모든 데이터 타입을 사용할 수 있다.
-// : 배열, 또 다른 객체, 함수 등
+// : 배열, 또 다른 객체, 함수 등 
 
 //! 3. 객체 리터럴(object literal)
 // : 프로퍼티(속성)와 메소드를 통해서 구현하는 객체
@@ -85,7 +84,7 @@ let objectName = {
 // : 하나의 이름 공간에서 하나의 이름이 단 하나의 객체만을 가리킴.
 
 // 객체명(ex.person)은 네임스페이스처럼 동작
-// , 객체 내에서 캡슐화되어 있는 것에 접근하려면
+// , 객체 내에서 캡슐화되어 있는 것에 접근하려면 
 // , '객체명.하위항목'으로 접근
 
 // 하위 항목: 프로퍼티명, 배열의 일부, 객체의 메소드 등
@@ -108,41 +107,41 @@ console.log(person.name.first);
 // : 객체를 '연관배열'이라고도 불림.
 
 // 객체명['프로퍼티명']
-console.log(person["age"]);
-console.log(person["name"]["first"]);
+console.log(person['age']);
+console.log(person['name']['first']);
 
 //! 6. 객체 멤버 설정
 // : 객체 멤버 가져오기(반환)방법과 동일하게
 // : , 점 표기법과 대괄호 표기법을 사용
 console.log(person.age);
-console.log(person["name"]["first"]);
+console.log(person['name']['first']);
 person.age = 45;
-person["name"]["first"] = "junGook";
+person['name']['first'] = 'junGook';
 
 console.log(person.age); // 45
-console.log(person["name"]["first"]); // junGook
+console.log(person['name']['first']); // junGook
 
 // 객체 멤버를 설정하는 것은
 // 기존의 존재하는 프로퍼티나 메소드를 새롭게 정의하는 것 뿐만이 아니라
 // , 완전히 새로운 멤버 생성도 가능
-person["job"] = "developer";
-person.work = function () {
-  console.log("work hard!");
+person['job'] = 'developer';
+person.work = function() {
+  console.log('work hard!');
 };
 
-console.log(person["job"]);
+console.log(person['job']);
 person.work();
 
 function addProperty() {
   // 사용자 입력을 변수에 저장
-  let myDataName = document.getElementById("propertyName").value;
-  let myDataValue = document.getElementById("propertyValue").value;
+  let myDataName = document.getElementById('propertyName').value;
+  let myDataValue = document.getElementById('propertyValue').value;
 
   // 객체 속성에 추가
   person[myDataName] = myDataValue;
 
   // 결과 출력
-  console.log("Property added", myDataName, "=", person[myDataName]);
+  console.log('Property added', myDataName, '=', person[myDataName]);
 }
 // 대괄호 표기법을 사용하여 멤버의 이름을 동적으로 사용 가능하며 변수값 또한 사용 가능
 
@@ -160,19 +159,20 @@ function addProperty() {
 // 두개의 다른 person 객체가 각각 다른 이름으로 생성될 경우, 호출 시의 해당 객체를 가리킬 때 사용
 
 let person1 = {
-  name: "SaeDong",
-  greeting: function () {
+  name: 'SeungAh',
+  greeting: function() {
     console.log(this.name);
-  },
-};
+  }
+}
 
 let person2 = {
-  name: "JunGook",
-  greeting: function () {
+  name: 'JunGook',
+  greeting: function() {
     console.log(this.name);
-  },
-};
+  }
+}
 
 // this는 실행중인 코드가 속해있는 객체
 person1.greeting();
 person2.greeting();
+
