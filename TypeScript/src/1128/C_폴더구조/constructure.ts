@@ -1,4 +1,4 @@
-// constructure.ts
+// constructor.ts
 
 //! 1. 타입스크립트 프로젝트 디렉토리 구조
 
@@ -21,7 +21,7 @@
   devDependencies: 프로젝트의 개발에만 필요한 패키지의 목록과 버전 정보입니다. 이 패키지들은 테스팅, 빌드, 문서 생성 등의 개발 작업에 사용됩니다.
 */
 
-// ? tsconfing.json
+// ? tsconfig.json
 // : 타입스크립트 컴파일러의 설정을 저장
 /* 
   compilerOptions: 컴파일러 옵션을 설정하는 객체입니다. 이 객체에는 여러 하위 옵션이 있습니다.
