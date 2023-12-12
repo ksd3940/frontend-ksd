@@ -63,7 +63,7 @@
   : 사용자 변수에서 Path 설정
     '사용자 이름'에 대한 사용자 변수
     파일 탐색기 > C드라이브 > Users(사용자)
-    > 자신의 컴퓨터 이름 > AppData > Roaming > npm의 경로를 복사
+    > 자신의 컴퓨터 이름(ITPS) > AppData > Roaming > npm의 경로를 복사
 
     > Path(변수) > 환경 변수 편집 창
     > 새로 만들기 > 복사한 npm 경로를 삽입
@@ -95,7 +95,7 @@
     질문 없이 기본값으로 package.json 파일을 생성
 
 2. npm install
-  : package.json 파일에 명시된 모든 의존성을 설치
+  : pakage.json 파일에 명시된 모든 의존성을 설치
   : 특정 패키지 설치 시
     npm install 패키지이름
   : -D | --save-dev 옵션 추가
@@ -172,7 +172,7 @@ outDir: 컴파일된 파일이 위치할 디렉토리를 지정
   npm install typescript --save-dev
   프로젝트 디렉토리 내에서 타입스크립트를 설치
   - 해당 명령은 타입스크립트 프로젝트의 개발 의존성으로 추가
-    devDependencies
+    devDependecies
   - 배포 시에는 포함되지 X
 
 : 전역 설치
@@ -183,10 +183,10 @@ outDir: 컴파일된 파일이 위치할 디렉토리를 지정
 devDependencies: 개발 과정에만 필요한 패키지들의 목록
 dependencies: 프로젝트 실행에 필요한 패키지들의 목록
 
-? tsconfig.json 생성
+? tsconfing.json 생성
 : 타입스크립트 프로젝트의 설정을 저장하는 파일
 : 타입스크립트 컴파일러가 프로젝트를 컴파일하는 방법을 지정
-: 예) 출력 디렉토리 위치, 사용할 모듈 시스템, 지원하는 ECMAScript 버전 등을 관리
+: 예) 출력 디렉토리 위치, 사용할 모듈 시스템, 지원하는 ECMAScirpt 버전 등을 관리
 
   npx tsc --init
   : 해당 컴파일러 옵션은 주석을 해제하여 사용 가능

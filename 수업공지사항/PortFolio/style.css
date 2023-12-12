@@ -3,12 +3,24 @@
   white-space: nowrap;
 }
 
+ul,
+li,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 /* 상단 로그인 영역*/
 .login-options {
@@ -37,7 +49,7 @@ body {
 
 /* 로고 네비게이션 영역 */
 .logo_nav {
-  display:flex;
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 40px;
@@ -262,7 +274,6 @@ body {
   border-radius: 10px;
   border: 1px solid #cdcdcd;
   gap: 10px;
-  
 }
 
 #phone {
@@ -318,8 +329,6 @@ body {
   text-decoration: none;
   color: #249b9f;
 }
-
-
 
 .right-box-in-top {
   display: flex;
@@ -410,7 +419,8 @@ body {
   font-weight: 400;
 }
 
-#etc3, #etc4  {
+#etc3,
+#etc4 {
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -567,78 +577,69 @@ body {
 
 /* 소식 / 뉴스 영역 */
 .notice-news {
-  position: absolute;
-  top: 2400px;
-  background-color: tan;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 2320px;
   width: 100%;
   padding: 80px 0;
+  gap: 40px;
 }
 
-.notice-news-main {
-  display: flex;
-  justify-content: center;
-  background-color: yellow;
+.noticebox .newsbox {
+  width: 580px;
+  height: 226px;
 }
-.main-box {
-  display: flex;
+
+.notice-news-head {
   width: 580px;
   height: 36px;
 }
 
-/* .main-in-box-top {
+.notice-news-head >h2 > a {
+  font-size: 24px;
+  color: #444444;
 }
 
-.main-in-box-middle{
+.notice-news-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 580px;
+  height: 170px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
-.sell_background {
-
-}
-
-.sell_div {
-
-}
-
-.main-box-bottom {
-
-}
-
-.main-box-bottom-hy {
-
-}
-
-.main-box-bottom-hy > a {
-
-}
-
-#notice-news-bottom-hy1{
-
-}
-
-#notice-news-bottom-hy2 {
-
-} */
-
-/* sns 영역 */
-.sns {
-  background-color: beige;
+.notice-news-li {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 2635px;
-  width: 100%;
-  padding: 80px 0;
+  line-height: 40px;
+  width: 580px;
+  height: 40px;
 }
 
-#seoul_asan_sns {
-  font-size: 25px;
+.notice-news-li > a {
+  font-size: 18px;
+  color: #444444;
 }
 
+.notice-news-li > span {
+  font-size: 15px;
+  color: #999999;
+  position: relative;
+  width: 75px;
+  height: 40px;
+  text-align: center;
+}
+
+
+
+/* sns 영역 */
 
 /* 기타 안내 영역 */
-.etc-info {
+/* .etc-info {
   background-color: aqua;
   display: flex;
   justify-content: center;
@@ -661,16 +662,16 @@ body {
   align-items: center;
   width: 100px;
   border: 1px solid white;
-  border-radius: 50%; /* 변경: 100%에서 50%로 수정 */
+  border-radius: 50%;
   padding-bottom: 20px;
 }
 
 .circle > a {
   color: white;
-}
+} */
 
 /* 저작권 영역 */
-.footer {
+/* .footer {
   background-color: #999999;
   display: flex;
   justify-content: center;
@@ -768,4 +769,4 @@ body {
 
 .footer-bottom > .footer-icon-box > div > a {
   font-size: 10px;
-}
+} */
