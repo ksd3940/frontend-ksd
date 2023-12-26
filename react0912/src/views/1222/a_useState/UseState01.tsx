@@ -38,8 +38,10 @@ export default function UseState01() {
 
   return (
     <div>
+      <h5 style={{ backgroundColor: 'black', color: 'white' }}>useState 최신 상태 정리
+      </h5>
       <p>You clicked {count} times</p>
       <button onClick={handleClick}>Click Me</button>
     </div>
-  )
+  );
 }

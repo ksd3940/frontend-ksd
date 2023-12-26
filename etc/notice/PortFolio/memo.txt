@@ -1,0 +1,54 @@
+<div class="notice-news">
+        <div class="main-box">
+          <a href="" class="main-in-box-top">소식/공지</a>
+          <div class="main-in-box-middle">
+            <div class="sell_background">
+              <table class="sell_div">
+                <tr>
+                  <td><a href="">서울아산병원 갤러리 2024년 전시 신청</a></td>
+                  <td class="day">2023.08.16</td>
+                </tr>
+                <tr>
+                  <td><a href="">코로나19 예방을 위한 내원객 협조 안내</a></td>
+                  <td class="day">2023.08.02</td>
+                </tr>
+                <tr>
+                  <td><a href="">서울아산병원 정보보호인증</a></td>
+                  <td class="day">2023.07.24</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="main-box-bottom">
+            <div class="main-box-bottom-hy" id="notice-news-bottom-hy1">
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-box">
+          <a href="" class="main-in-box-top">뉴스</a>
+          <div class="main-in-box-middle">
+            <div class="sell_background">
+              <table class="sell_div">
+                <tr>
+                  <td><a href="">서울아산병원, 승모판막 클립시술 국내 첫 100례</a></td>
+                  <td class="day">2023.10.18</td>
+                </tr>
+                <tr>
+                  <td><a href="">캄보디아 환자 초청 진료</a></td>
+                  <td class="day">2023.10.16</td>
+                </tr>
+                <tr>
+                  <td><a href="">방사성의약품으로 암 진단 · 치료하는 ‘테라노스틱스’ ..</a></td>
+                  <td class="day">2023.07.24</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="main-box-bottom">
+            <div class="main-box-bottom-hy" id="notice-news-bottom-hy2">
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+    </div>
