@@ -1,9 +1,9 @@
-import React from 'react';
-import JSX01 from './a_JSX/JSX01';
-import JSX02 from './a_JSX/JSX02';
-import Props01 from './b_Props/Props01';
-import Rendering01 from './c_Rendering/Rendering01';
-import State01 from './d_State/State01';
+import React from 'react'
+import JSX01 from './a_JSX/JSX01'
+import JSX02 from './a_JSX/JSX02'
+import Props01 from './b_Props/Props01'
+import Rendering01 from './c_Rendering/Rendering01'
+import State01 from './d_State/State01'
 
 export default function Index() {
   return (
@@ -22,5 +22,5 @@ export default function Index() {
       <h2>4. 상태 관리</h2>
       <State01 />
     </div>
-  );
+  )
 }

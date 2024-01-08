@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useMemo, useState } from 'react';
+import React, { ChangeEvent, useMemo, useState } from 'react'
 
 //! useMemo
 // : 성능 최적화를 위해 사용
@@ -18,6 +18,7 @@ import React, { ChangeEvent, useMemo, useState } from 'react';
 // [a, b] = 해당 함수의 의존성 배열, 해당 값들이 변경될 때만 함수가 다시 실행
 
 export default function UseMemo() {
+
   const [count, setCount] = useState<number>(0);
   const [inputValue, setInputValue] = useState<string>('');
 
@@ -29,19 +30,21 @@ export default function UseMemo() {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
-  };
+  }
 
   const handleClick = () => {
     setCount(count + 1);
-  };
+  }
 
   return (
     <div>
-      <input type="text" value={inputValue} onChange={handleChange} />
+      <input 
+        type="text"
+        value={inputValue}
+        onChange={handleChange}  
+      />
       <button onClick={handleClick}>Increase Count</button>
-      <p>
-        Count: {count}, Calculated Value: {memoizedValue}
-      </p>
+      <p>Count: {count}, Calculated Value: {memoizedValue}</p>
     </div>
-  );
+  )
 }

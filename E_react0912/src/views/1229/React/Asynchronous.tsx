@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 // jsonplaceholder의 posts 데이터를 비동기함수 가져오기
 // - 해당 상태를 관리

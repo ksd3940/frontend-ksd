@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 //! React.memo
 // : React의 성능 최적화 기능 중 하나, 컴포넌트가 동일한 props로 렌더링 될 때 재렌더링을 방지
@@ -15,27 +15,25 @@ interface ListComponentProps {
   list: string[];
 }
 
-const ListComponent = React.memo(({ list }: ListComponentProps) => {
+const ListComponent = React.memo(({ list } : ListComponentProps) => {
   console.log('Rendering ListComponent');
   return (
     <ul>
-      {list.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
+      {list.map(item => <li key={item}>{item}</li>)}
     </ul>
-  );
+  )
 });
 
 export default function ReactMemo() {
   // ListComponent의 list prop이 변경되지 않는 한, 메인(ReactMemo) 컴포넌트의 count 상태가 변경되어도 재렌더링 X
   const [list, setList] = useState(['item1', 'item2']);
   const [count, setCount] = useState(0);
-
+  
   return (
     <div>
       <ListComponent list={list} />
       <button onClick={() => setCount(count + 1)}>Increase Button</button>
       <p>Count: {count}</p>
     </div>
-  );
+  )
 }

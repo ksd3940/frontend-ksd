@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 /*
 ! JSX
@@ -35,7 +35,7 @@ import React from 'react';
     : class속성을 className으로 설정
       - HTML에서 코드를 가져오는 경우
       - ctrl + f(찾기 > 바꾸기)
-*/
+*/ 
 
 export function Div() {
   return (
@@ -44,9 +44,10 @@ export function Div() {
       <div className="hello"></div>
       <div className="hello"></div>
     </>
-  );
+  )
 }
 export default function JSX01() {
+
   // 노드(HTML)를 반환하는 부분
   return (
     // 전체 elements를 감싸는 단 하나의 요소가 있어야 한다.
@@ -54,13 +55,13 @@ export default function JSX01() {
     <>
       {/* HTML 요소 */}
       <div>JSX01</div>
-      <input type="text" />
+      <input type="text" />  
       <img src="" alt="" />
       <br />
-      <hr />
+      <hr />  
 
       {/* 아래의 Div는 컴포넌트 */}
       <Div></Div>
     </>
-  );
+  )
 }

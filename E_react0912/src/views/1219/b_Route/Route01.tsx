@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 /*
 ! 리액트 라우터: 페이지 이동 기능
 
@@ -23,6 +23,9 @@ npm install react-router-dom
 
 */
 
-export default function Route01() {
-  return <div>Route01</div>;
+export default function Route01()
+ {
+  return (
+    <div>Route01</div>
+  )
 }

@@ -1,13 +1,13 @@
-import React from 'react';
-import Async from './Async';
-import ReactGrammar from './ReactGrammar';
+import React from 'react'
+import ReactGrammer from './ReactGrammer'
+import Asynchronous from './Asynchronous'
 
-export default function Index() {
+export default function index() {
   return (
-    <>
-      <ReactGrammar />
-      <br />
-      <Async />
-    </>
-  );
+    <div>
+      <ReactGrammer />
+      <hr />
+      <Asynchronous />
+    </div>
+  )
 }

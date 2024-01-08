@@ -1,26 +1,28 @@
-// ChildProps02.tsx
-import React from 'react';
+import React from 'react'
 
-type UserType = {
-  name: string;
-  height: number;
-};
-
+// Props에 대한 타입 정의
 interface ChildComponentProps {
-  userInfo: UserType;
-  onUpdate: (newInfo: UserType) => void;
+  userInfo: {
+    name: string;
+    height: number;
+  };
+  onUpdate: (newInfo: {name: string; height: number}) => void;
 }
 
-export default function ChildProps02({ userInfo, onUpdate }: ChildComponentProps) {
-  const updateInfo = () => {
-    onUpdate({ name: 'kong sae dong', height: 175 });
-  };
+//^ 자식 컴포넌트
+const ChildProps02: React.FC<ChildComponentProps> = ({ userInfo, onUpdate }) => {
 
+  const updateInfo = () => {
+    // 상태 업데이트 로직
+    onUpdate({ name: 'lee do kyung', height: 158 });
+  }
   return (
     <div>
-      <p>name: {userInfo.name}</p>
-      <p>height: {userInfo.height}</p>
+      <p>Name: {userInfo.name}</p>
+      <p>Height: {userInfo.height}</p>
       <button onClick={updateInfo}>Update Info</button>
     </div>
-  );
+  )
 }
+
+export default ChildProps02;
