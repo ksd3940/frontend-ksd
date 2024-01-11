@@ -1,6 +1,5 @@
 import React from 'react'
-import puppy01  from '../../../assets/images/puppy-1.jpg'
-
+import puppy01  from '../c_Component/puppy-1.jpg'
 //! 컴포넌트(Component)
 // : 사용자 인터페이스(UI)를 구축하는 기본 요소
 

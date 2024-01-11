@@ -1,6 +1,31 @@
 {
   "users": [
-    { "id": 1, "username": "qwe123", "email": "qwe123@naver.com"},
-    { "id": 2, "username": "qwe456", "email": "qwe456@naver.com"}
+    {
+      "id": 2,
+      "username": "b",
+      "email": "bb"
+    },
+    {
+      "id": 4,
+      "username": "d",
+      "email": "dd"
+    },
+    {
+      "id": 6,
+      "username": "f",
+      "email": "ff"
+    },
+    {
+      "id": 8,
+      "username": "h",
+      "email": "hh"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "ㅎㅇ",
+      "content": "ㅎㅇㅇㅇ"
+    }
   ]
 }
