@@ -1,22 +1,23 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 // 파일명을 index로 지정하는 경우
 // : 웹 페이지의 메인 파일 - 해당 파일이 존재하는 디렉토리(폴더)의 기본(메인) 파일임을 파일명으로 알려줌.
-import Index1219 from "./views/1219";
-import Index1221 from "./views/1221";
-import Index1222 from "./views/1222";
-import Index1226 from "./views/1226";
-import Index1228 from "./views/1228";
-import Index1229 from "./views/1229/react";
-import Index0102 from "./views/0102";
-import Index0104 from "./views/0104";
-import Index0105 from "./views/0105";
-import Index0108 from "./views/0108/react";
-import Index0109 from "./views/0109";
-import Index0111 from "./views/0111";
+import Index1219 from './views/1219';
+import Index1221 from './views/1221';
+import Index1222 from './views/1222';
+import Index1226 from './views/1226';
+import Index1228 from './views/1228';
+import Index1229 from './views/1229/react';
+import Index0102 from './views/0102';
+import Index0104 from './views/0104';
+import Index0105 from './views/0105';
+import Index0108 from './views/0108/react';
+import Index0109 from './views/0109';
+import Index0111 from './views/0111';
+import Index0112 from './views/0112';
 
-
-import ThemeProvider from "./views/0105/a_ContextAPI/ThemeProvider";
-import { createGlobalStyle } from "styled-components";
+import ThemeProvider from './views/0105/a_ContextAPI/ThemeProvider';
+import { createGlobalStyle } from 'styled-components';
+import Login from './views/0112/components/Login';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,7 +55,8 @@ function App() {
           <Route path="/0108" element={<Index0108 />} />
           <Route path="/0109" element={<Index0109 />} />
           <Route path="/0111" element={<Index0111 />} />
-        
+          <Route path="/0112" element={<Index0112 />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </ThemeProvider>
     </>
