@@ -22,7 +22,7 @@
 // git checkout 이니셜
 //! 작업 후 GitHub 업로드 과정
 // git status
-// git pull origin main
+// git pull origin main 
 
 // 연습용 파일 kdu.txt 파일 > 깃 연결
 
@@ -49,3 +49,6 @@
 // const b; -- 8번째 줄
 
 //!!!! 절대 같은 파일 여러명이 작업 금지 !!!!//
+
+
+
